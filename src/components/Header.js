@@ -5,13 +5,8 @@ const Header = () => {
   return (
     <div className="ui seondary pointine menu">
       <Link to="/" className="item">
-        Streamy
+        All Blogs
       </Link>
-      <div className="right menu">
-        <Link to="/" className="item">
-          All Streams
-        </Link>
-      </div>
     </div>
   );
 };

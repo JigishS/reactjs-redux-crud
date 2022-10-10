@@ -1,4 +1,4 @@
-import streams from "../apis/streams";
+import blogs from "../apis/blogs";
 import {
   CREATE_STREAM,
   DELETE_STREAM,
@@ -8,32 +8,32 @@ import {
 } from "./types";
 import history from "../history";
 
-export const createStream = (formValues) => async (dispatch, getState) => {
-  const response = await streams.post("/streams", { ...formValues });
+export const createBlog = (formValues) => async (dispatch, getState) => {
+  const response = await blogs.post("/blogs", { ...formValues });
   dispatch({ type: CREATE_STREAM, payload: response.data });
 
   history.push("/");
 };
 
-export const fetchStreams = () => async (dispatch) => {
-  const response = await streams.get("/streams");
+export const fetchBlogs = () => async (dispatch) => {
+  const response = await blogs.get("/blogs");
   dispatch({ type: FETCH_STREAMS, payload: response.data });
 };
 
-export const fetchStream = (id) => async (dispatch) => {
-  const response = await streams.get(`/streams/${id}`);
+export const fetchBlog = (id) => async (dispatch) => {
+  const response = await blogs.get(`/blogs/${id}`);
   dispatch({ type: FETCH_STREAM, payload: response.data });
 };
 
-export const editStream = (id, formValues) => async (dispatch) => {
-  const response = await streams.patch(`/streams/${id}`, formValues);
+export const editBlog = (id, formValues) => async (dispatch) => {
+  const response = await blogs.patch(`/blogs/${id}`, formValues);
   dispatch({ type: EDIT_STREAM, payload: response.data });
 
   history.push("/");
 };
 
-export const deleteStream = (id) => async (dispatch) => {
-  await streams.delete(`/streams/${id}`);
+export const deleteBlog = (id) => async (dispatch) => {
+  await blogs.delete(`/blogs/${id}`);
   dispatch({ type: DELETE_STREAM, payload: id });
 
   history.push("/");

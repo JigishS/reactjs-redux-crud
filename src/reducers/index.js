@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 import { reducer } from "redux-form";
-import streamReducer from "./streamReducer";
+import blogReducer from "./blogReducer";
 
 export default combineReducers({
   form: reducer,
-  streams: streamReducer,
+  blogs: blogReducer,
 });

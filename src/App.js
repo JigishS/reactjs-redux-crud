@@ -1,9 +1,9 @@
 import { Router, Route, Switch } from "react-router-dom";
-import StreamList from "./components/streams/StreamList";
-import StreamCreate from "./components/streams/StreamCreate";
-import StreamEdit from "./components/streams/StreamEdit";
-import StreamDelete from "./components/streams/StreamDelete";
-import StreamShow from "./components/streams/StreamShow";
+import BlogList from "./components/blogs/BlogList";
+import BlogCreate from "./components/blogs/BlogCreate";
+import BlogEdit from "./components/blogs/BlogEdit";
+import BlogDelete from "./components/blogs/BlogDelete";
+import BlogShow from "./components/blogs/BlogShow";
 import Header from "./components/Header";
 import history from "./history";
 
@@ -14,11 +14,11 @@ const App = () => {
         <div>
           <Header />
           <Switch>
-            <Route path="/" exact component={StreamList} />
-            <Route path="/streams/new" exact component={StreamCreate} />
-            <Route path="/streams/edit/:id" exact component={StreamEdit} />
-            <Route path="/streams/delete/:id" exact component={StreamDelete} />
-            <Route path="/streams/:id" exact component={StreamShow} />
+            <Route path="/" exact component={BlogList} />
+            <Route path="/blogs/new" exact component={BlogCreate} />
+            <Route path="/blogs/edit/:id" exact component={BlogEdit} />
+            <Route path="/blogs/delete/:id" exact component={BlogDelete} />
+            <Route path="/blogs/:id" exact component={BlogShow} />
           </Switch>
         </div>
       </Router>
