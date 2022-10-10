@@ -1,0 +1,19 @@
+{
+  "blogs": [
+    {
+      "title": "Mike Butcher",
+      "description": "Blogging is a conversation, not a code.",
+      "id": 1
+    },
+    {
+      "title": "Lee Odden",
+      "description": "A blog is only as interesting as the interest shown in others.",
+      "id": 2
+    },
+    {
+      "title": "Tom Foremski",
+      "description": "Blogging is a communications mechanism handed to us by the long tail of the Internet.",
+      "id": 3
+    }
+  ]
+}
