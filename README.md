@@ -32,3 +32,6 @@ git checkout api
 npm install
 ```
 #### 7) Now run the project
+```
+npm run start
+```
