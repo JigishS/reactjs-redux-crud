@@ -1,4 +1,4 @@
-# ReactJs Redux CRUD
+# ReactJs Redux CRUD - Client
 
 This app will use to create CRUD app.
 
@@ -68,6 +68,6 @@ npm run start
 
 ***
 
-### Now, tow projects are running
-### 1) First is frontend to manage data visually. - http://localhost:3000
-### 2) Second is backend to manage data in json format - http://localhost:3001
+### Now, two projects are running
+#### 1) First is frontend to manage data visually. - http://localhost:3000
+#### 2) Second is backend to manage data in json format - http://localhost:3001
